@@ -46,6 +46,3 @@ The visual design is inspired by high-end wellness and health brands (such as *F
 - Warm, neutral palette inspired by psychology and wellness branding  
 - 100% responsive, mobile-first design  
 - Ethical and empathetic copywriting — no commercial pressure  
-
-# Launch in your browser
-open index.html
