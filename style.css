@@ -47,14 +47,85 @@ a{text-decoration:none}
 .faq-item div{max-height:0;overflow:hidden;padding:0 16px;color:var(--muted);font-size:.9rem;line-height:1.6;transition:max-height .3s ease;}
 .faq-item.open div{padding-bottom:14px;}
 
-/* CTA */
-.cta{background:var(--soft);text-align:center;padding:100px 20px;}
-.cta h2{font-size:2rem;margin-bottom:10px;}
-.cta p{color:var(--muted);max-width:500px;margin:0 auto 20px;}
-.footer{background:#EAE5DC;padding:30px 0;text-align:center;font-size:.8rem;color:var(--muted);}
-.credit strong{color:var(--salvia);}
-.whatsapp-float{position:fixed;right:18px;bottom:18px;background:var(--salvia);color:#fff;font-size:1.3rem;padding:10px 14px;border-radius:50%;box-shadow:0 10px 40px rgba(0,0,0,.25);transition:var(--trans);z-index:60;}
-.whatsapp-float:hover{transform:translateY(-3px);background:#557463;}
+/* --- CTA / CONTATTI AMPLIATA --- */
+
+.cta {
+  background: var(--soft, #f2f0ec);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cta h2 {
+  font-family: var(--font-serif, "Lora", serif);
+  font-size: 2rem;
+  color: var(--text, #2f3330);
+  margin-bottom: 10px;
+}
+
+.cta p {
+  color: var(--muted, #6b6f68);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 auto 20px;
+  max-width: 600px;
+}
+
+.contact-alt {
+  margin-top: 40px;
+}
+
+.contact-alt p {
+  font-size: 0.9rem;
+  color: var(--muted, #6b6f68);
+  margin-bottom: 14px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  text-decoration: none;
+  background-color: #fff;
+  color: var(--salvia, #6c8c7a);
+  border: 1px solid rgba(108, 140, 122, 0.25);
+  transition: all 0.25s ease;
+}
+
+.btn-outline:hover {
+  background-color: rgba(108, 140, 122, 0.08);
+  border-color: rgba(108, 140, 122, 0.35);
+}
+
+.note {
+  font-size: 0.75rem;
+  color: var(--muted, #6b6f68);
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 /* RESPONSIVE NAV */
 @media (max-width:768px){
@@ -71,3 +142,4 @@ a{text-decoration:none}
 /* ANIMATIONS */
 .fade{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease;}
 .fade.visible{opacity:1;transform:translateY(0);}
+
