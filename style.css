@@ -114,6 +114,25 @@ a{text-decoration:none}
   opacity: 0.8;
 }
 
+.footer{
+  background:#EAE5DC;
+  padding:30px 0;
+  font-size:.8rem;
+  color:var(--muted);
+}
+.footer .container{
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:0;
+}
+.footer p{
+  margin:0;
+  line-height:1.15;
+}
+.credit strong{color:var(--salvia);}
+
 /* Responsive */
 @media (max-width: 768px) {
   .contact-buttons {
@@ -142,4 +161,3 @@ a{text-decoration:none}
 /* ANIMATIONS */
 .fade{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease;}
 .fade.visible{opacity:1;transform:translateY(0);}
-
